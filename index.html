@@ -1,66 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GameZone - Gaming Website</title>
 
-    <title>GameZone - Ultimate Gaming World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 255, 247, 0), rgba(183, 0, 255, 0), rgba(49, 0, 128, 0));
+            color: black;
+            text-align: center;
+        }
 
-    <link rel="stylesheet" href="style.css">
-</head>
+        header {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+}
 
+header h1 {
+    font-size: 35px;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin: 30px;
+}
+
+section h2 {
+    color: rgb(0, 81, 128);
+}
+
+/* Games */
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Game cards */
+article {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border: 2px solid rgb(92, 0, 128);
+    border-radius: 10px;
+}
+
+/* Images */
+article img {
+    width: 100%;
+    height: 150px;
+}
+
+/* Game title */
+article h3 {
+    color: rgb(0, 85, 128);
+}
+
+/* Button */
+button {
+    background-color: rgb(0, 122, 128);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* List */
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+</style>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>🎮 GAMEZONE</h1>
-        <p>Enter the World of Ultimate Gaming!</p>
+        <h1> GAMEZONE </h1>
+        <p>Welcome to the Ultimate Gaming World!</p>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
         <a href="#games">Games</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Home Section -->
-        <section id="home" class="hero">
+        <section id="home">
 
-            <div class="hero-text">
-                <h2>Welcome, Gamer! 🕹️</h2>
+            <h2>Welcome Gamers!</h2>
 
-                <p>
-                    Discover exciting games, legendary characters,
-                    epic battles and amazing gaming adventures.
-                </p>
-
-                <button onclick="showMessage()">
-                    Start Gaming 🚀
-                </button>
-            </div>
+            <p>
+                Discover amazing games, exciting adventures,
+                and <strong>epic gaming challenges!</strong>
+            </p>
 
             <img
                 src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
                 alt="Gaming setup"
+                width="500"
             >
 
         </section>
 
-        <!-- Games Section -->
+
         <section id="games">
 
-            <h2>🔥 Popular Games</h2>
+            <h2>Popular Games</h2>
 
-            <div class="games-container">
+            <div class="games">
 
-                <article class="game-card">
-                    <h3>⚔️ Battle Arena</h3>
+                <article>
+
+                    <h3>Battle Arena</h3>
 
                     <img
                         src="https://images.unsplash.com/photo-1511512578047-dfb367046420"
@@ -68,18 +148,20 @@
                     >
 
                     <p>
-                        Fight your opponents and become
-                        the ultimate champion.
+                        Fight your enemies and become
+                        the ultimate champion!
                     </p>
 
-                    <button onclick="playGame('Battle Arena')">
+                    <button onclick="alert('Battle Arena Started!')">
                         Play Now
                     </button>
+
                 </article>
 
 
-                <article class="game-card">
-                    <h3>🏎️ Speed Racer</h3>
+                <article>
+
+                    <h3>Speed Racer</h3>
 
                     <img
                         src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
@@ -87,18 +169,20 @@
                     >
 
                     <p>
-                        Race against the clock and
-                        become the fastest driver.
+                        Race against your friends and
+                        become the fastest racer!
                     </p>
 
-                    <button onclick="playGame('Speed Racer')">
+                    <button onclick="alert('Speed Racer Started!')">
                         Play Now
                     </button>
+
                 </article>
 
 
-                <article class="game-card">
-                    <h3>👾 Space Invaders</h3>
+                <article>
+
+                    <h3>Space Invaders</h3>
 
                     <img
                         src="https://images.unsplash.com/photo-1511882150382-421056c89033"
@@ -106,128 +190,49 @@
                     >
 
                     <p>
-                        Defend the galaxy from dangerous
-                        alien invaders.
+                        Save the galaxy from dangerous
+                        alien invaders!
                     </p>
 
-                    <button onclick="playGame('Space Invaders')">
+                    <button onclick="alert('Space Invaders Started!')">
                         Play Now
                     </button>
+
                 </article>
 
             </div>
 
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
 
-            <h2>🎯 About GameZone</h2>
+        <section id="about">
+
+            <h2>About GameZone</h2>
 
             <p>
-                GameZone is a colorful gaming website created
-                for gamers who love action, racing, adventure
-                and strategy games.
+                GameZone is a colorful website created
+                for people who love <strong>gaming!</strong>
             </p>
 
-            <h3>Why Choose GameZone?</h3>
+            <h3>Why Gaming Is Fun</h3>
 
             <ul>
-                <li>🎮 Exciting games</li>
-                <li>🏆 Gaming challenges</li>
-                <li>🔥 Competitive gameplay</li>
-                <li>🌟 Fun gaming community</li>
+                <li>Improves problem solving</li>
+                <li>Creates exciting challenges</li>
+                <li>Connects players</li>
+                <li>Provides entertainment</li>
             </ul>
-
-        </section>
-
-        <!-- Gaming Tips -->
-        <section class="tips">
-
-            <h2>💡 Gaming Tips</h2>
-
-            <ol>
-                <li>Practice your skills every day.</li>
-                <li>Learn from your mistakes.</li>
-                <li>Take breaks between gaming sessions.</li>
-                <li>Always have fun!</li>
-            </ol>
-
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-
-            <h2>📩 Contact Us</h2>
-
-            <form onsubmit="submitForm(event)">
-
-                <label for="name">Your Name:</label>
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-                <label for="email">Email:</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                >
-
-                <label for="message">Message:</label>
-
-                <textarea
-                    id="message"
-                    placeholder="Write your message..."
-                    rows="5"
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Send Message 📤
-                </button>
-
-            </form>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+
     <footer>
-        <p>© 2026 GameZone | Made with ❤️ for Gamers</p>
+        <p>© 2026 GameZone | Made with love for Gamers</p>
     </footer>
-
-
-    <!-- JavaScript -->
-    <script>
-
-        function showMessage() {
-            alert("🎮 Welcome to GameZone! Let the gaming begin!");
-        }
-
-        function playGame(gameName) {
-            alert("🚀 Starting " + gameName + "!");
-        }
-
-        function submitForm(event) {
-
-            event.preventDefault();
-
-            let name = document.getElementById("name").value;
-
-            alert("Thanks, " + name + "! Your message has been received.");
-
-        }
-
-    </script>
 
 </body>
 
 </html>
+
